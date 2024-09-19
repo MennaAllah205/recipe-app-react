@@ -1,0 +1,113 @@
+.search-results {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #D8CCA3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .search-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #9A3B3B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+ 
+  .recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .recipe-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .recipe-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .recipe-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    color: #333;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(146, 47, 47, 0.2);
+  }
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .search-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-form input[type="text"] {
+      margin-bottom: 0.5rem;
+      max-width: 100%;
+    }
+  
+    .search-form button {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .recipe-list {
+      gap: 1rem;
+    }
+  
+    .recipe-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-form input[type="text"],
+    .search-form button {
+      font-size: 0.875rem;
+      padding: 0.5rem;
+    }
+  
+    .recipe-card h2 {
+      font-size: 1rem;
+    }
+  }
